@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zyn's ab testing</title>
+    <link rel="icon" href="images/flower.PNG">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+
+
+</head>
+<body>
+
+    <header id="header">
+        <h1>An Brief Introduction to the World of AB Testing</h1>
+    </header>
+
+    <main id="main">
+        <div id="intro">
+            <h2 class="sub-heading">Introduction</h2>
+            <div id="intro-content-box">
+                <p> In this project, I ran a simple AB test on 2 different UI designs and conducted a brief statistical analysis of the results. From the results, I drew conclusions on whether a design choice could have reasonably impacted user interaction.<br>
+                
+                The webpage in question is a clinic's website. The target interaction was to book an appointment with a specific doctor, at a specific date and location. The original website is Version A below. Version B is the redesign that I completed in a short period of time.</p>
+            </div>
+            <div id="compare-container">
+                <div class="image">
+                    <img src="images/version-A.png" alt="Version A of the webpage" />
+                    <h3>Version A of the Webpage (Original)</h3>
+                </div>
+                <div class="image">
+                    <img src="images/version-B.png" alt="Version B of the webpage" />
+                    <h3>Version B of the Webpage (Redesign)</h3>
+                </div>
+            </div>
+                
+                
+           
+            
+
+        </div>
+        <div id="usability">
+            <div class="content-box">
+                <h2 class="sub-heading">My Hypothesis</h2>
+                
+                <div class="images-content">
+                    <h3>My Data Types: Misclick Rate, Time on Page, and Number of Clicks</h3>
+                    <p>The following table describes each data type, and the null and alternative hypothesis that I came up with for each of them</p>
+                    
+                    <table>
+                        <tr>
+                            <th>Misclick Rate</th>
+                            <th>Time on Page</th>
+                            <th>Number of Clicks</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <b>Description:</b> The probability that a user clicks something else on the page before finding the correct button for the task
+                                    </li>
+                                    <li>
+                                        <b>Null Hypothesis:</b> Version A has the probability of misclicks as version B
+                                    </li>
+                                    <li>
+                                        <b>Alternative Hypothesis:</b> Version B will have a different misclick rate than version A. </li>
+                                        <ul>
+                                            <li><b>Justification: </b>This is because Version B is designed with higher color contrast, different colored buttons for different functions, and dividers between appointment slots so there is clear button alignment to appointment details. This makes it easier for users to find the “Schedule Appointment” button for the correct doctor, date and location, lowering the misclick rate.</li>
+                                        </ul>
+                                    <li><b>My Prediction:</b> I predict that I will reject the null hypothesis, because version A will have a higher misclick rate than Version B. This is due to the design of Version A which has lower color contrast, poor visual alignment and an unclear organization of data, making it easier for users to make mistakes when finding the correct button 
+                                    </li>
+                                </ul>
+    
+    
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <b>Description:</b> The time spent on the webpage for each user group
+                                    </li>
+                                    <li>
+                                        <b>Null Hypothesis:</b> Each user group spends the same amount of time on Version A and Version B
+                                    </li>
+                                    <li>
+                                        <b>Alternative Hypothesis:</b> Each user group spends a shorter time on version B than on version A.
+                                    </li>
+                                        <ul>
+                                            <li><b>Justification: </b>This is because Version B is designed with higher color contrast, different colored buttons for different functions, and dividers between appointment slots so there is clear button alignment to appointment details. This makes it easier for users to find the “Schedule Appointment” button for the correct doctor, date and location, reducing the time spent finding the correct button.</li>
+                                        </ul>
+                                    <li><b>My Prediction:</b> I predict that I will reject the null hypothesis, because users will spend more time on Version A than Version B. This is due to the design of Version A which has lower color contrast, poor visual alignment and an unclear organization of data, causing users to spend more time orienting themselves to the screen’s layout
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <b>Description:</b> The number of times a user clicks on the screen until they successfully complete the task
+                                    </li>
+                                    <li>
+                                        <b>Null Hypothesis:</b> The number of times a user clicks on the screen until they successfully complete the task is the same in version A and version B
+                                    </li>
+                                    <li>
+                                        <b>Alternative Hypothesis:</b> The number of times a user clicks on the screen until they successfully complete the task is lower in version B than in version A
+                                    </li>
+                                        <ul>
+                                            <li><b>Justification: </b>This is because Version B is designed with higher color contrast, different colored buttons for different functions, and dividers between appointment slots so there is clear button alignment to appointment details. This makes it easier for users to find the “Schedule Appointment” button for the correct doctor, date and location, reducing the number of unnecessary clicks made on the screen until the task is completed</li>
+                                        </ul>
+                                    <li><b>My Prediction:</b> I predict that I will reject the null hypothesis, because user will click on the screen more times in version A than in Version. This is due to the design of Version A which has lower color contrast, poor visual alignment and an unclear organization of data, causing users to be more confused and click on the wrong places at a higher rate.
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                      
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="sketches">
+            <div class="content-box">
+                <h2 class="sub-heading">Statistical Test</h2>
+                <p>To evaluate the impact of the redesign, I ran statistical tests on each of the three data types</p>
+                <div class="sketches">
+                    <h3>1. Misclick Rate</h3>
+                    <h4>Type of Test and Justification</h4>
+                    <p>For this metric, I ran the Chi-Square test, since I am counting the occurrence of a misclick among users of Version A and Version B. The status of whether a misclick occurs is a categorical variable, since its either True or False among a sample of users. 
+                    </p>
+                    
+                    <h4>Was the difference between the Versions statistically significant?</h4>
+                    <p>It was statistically significant, since the p-value = 0.00462, where p-value < significance level (.05). The lower the p-value, the greater the statistical significance of the observed difference. This means that I can reject the null hypothesis, as there is a high chance the alternative hypothesis will repeat itself in other trials or situations.
+                    </p>
+
+                    <h4>A description of any other important values and what they tell us</h4>
+                    <ul>
+                        <li>Degrees of Freedom (DF) = 1. DF refers to the number of independent pieces of information in a test. since there are only 2 categories of answers, the test has 1 degree of freedom</li>
+                        <li>Chi-Square Value = 8.02. The Chi-Square Value is a single number that adds up all the differences between our actual data and the data expected if there is no difference.  If the actual data and expected data (if no difference) are identical, the Chi-square value is 0.  A bigger difference will give a bigger Chi-square value.In this case, the Chi-Square value is mainly used to calculate the p value</li>
+                    </ul>
+
+                    <h4>Conclusion: Is the null hypothesis rejected?</h4>
+                    <p>I reject the null hypothesis.</p>
+                    
+                    <h3>2. Time on Page</h3>
+                    <h4>Type of Test and Justification</h4>
+                    <p>For this metric, I ran the one-tailed t-test, because the time taken is a continuous variable, and I am only interested if the time on page for version A is greater than time on page for version B (single direction)</p>
+                    
+                    <h4>Was the difference between the Versions statistically significant?</h4>
+                    <p>It was statistically significant, since the p-value = 0.0000627, where  p-value < significance level (.05). The lower the p-value, the greater the statistical significance of the observed difference. This means that I can reject the null hypothesis, as there is a high chance the alternative hypothesis will repeat itself in other trials or situations.
+                    </p>
+
+                    <h4>A description of any other important values and what they tell us</h4>
+                    <ul>
+                        <li>T-Score = -5.20. The T-Score is the number of standard deviations away from the mean of the t-distribution.</li>
+                        <li>Avg(Version A) =  26861.71429;  Avg(Version B) =  9627.214286. This refers to the mean time taken on page per user</li>
+                        <li>Variance(Version A) = 146407008.7, Variance (Version B) = 7429874.951. Variance measures of the spread or dispersion within a set of data, which means that there is a greater range of values in Version A than B, since its variance is greater.
+                        </li>
+                        <li>
+                            P-Value = 0.0000627. The  p-value is the likelihood of finding a mean difference by chance if indeed there is no difference in the population. The low p value in this context indicates a statistically significant result, meaning the observed data provide strong evidence against the null hypothesis.
+                        </li> 
+                        
+                    </ul>
+
+                    <h4>Conclusion: Is the null hypothesis rejected?</h4>
+                    <p>I reject the null hypothesis.</p>
+
+                    <h3>3. Number of Clicks</h3>
+                    <h4>Type of Test and Justification</h4>
+                    <p>For this metric, I ran the one-tailed t-test, because the number of clicks on a page till success is a continuous variable, and I am only interested if the number of clicks on page till success for version B is lower than version A (single direction)</p>
+                    
+                    <h4>Was the difference between the Versions statistically significant?</h4>
+                    <p>It is statistically significant, since p-value = 0.0146, where  p-value < significance level (.05). The lower the p-value, the greater the statistical significance of the observed difference. This means that I can reject the null hypothesis, as there is a high chance the alternative hypothesis will repeat itself in other trials or situations.
+                    </p>
+
+                    <h4>A description of any other important values and what they tell us</h4>
+                    <ul>
+                        <li>T-Score = -2.39. The T-Score is the number of standard deviations away from the mean of the t-distribution.</li>
+                        <li>Avg(Version A) =  6.43;  Avg(Version B) =  2.56. This refers to the mean time taken on page per user</li>
+                        <li>Variance(Version A) = 40.2, Variance (Version B) = 1.72. Variance measures of the spread or dispersion within a set of data, which means that there is a greater range of values in Version A than B, since its variance is greater.
+                        </li>
+                        <li>
+                            P-Value = 0.0146. The  p-value is the likelihood of finding a mean difference by chance if indeed there is no difference in the population. The low p value in this context indicates a statistically significant result, meaning the observed data provide strong evidence against the null hypothesis.
+                        </li> 
+                    </ul>
+
+                    <h4>Conclusion: Is the null hypothesis rejected?</h4>
+                    <p>I reject the null hypothesis.</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="wireframing">
+            <div class="content-box">
+                <h2 class="sub-heading">Summary Statistics</h2>
+                <p>Based off my final sketch, I created 3 wireframes for my redesign on Figma. These wireframes were for the Desktop, Tablet and Mobile displays of the webpage which was designed to be responsive.</p>
+                
+                </div>
+            </div>
+        </div>
+       
+
+        
+        <div id="redesign">
+            <div class="content-box">
+                <h2 class="sub-heading">Conclusion</h2>
+
+                
+                <p>Thank you for stopping by my website and scrolling to the end! :)</p>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <footer id="footer">
+        <div id="copyright">
+            <li>&copy; Zyn's Portfolio. All rights reserved</li>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+</body>
+</html>
