@@ -175,7 +175,7 @@
                     <h4>A description of any other important values and what they tell us</h4>
                     <ul>
                         <li>T-Score = -2.39. The T-Score is the number of standard deviations away from the mean of the t-distribution.</li>
-                        <li>Avg(Version A) =  6.43;  Avg(Version B) =  2.56. This refers to the mean time taken on page per user</li>
+                        <li>Avg(Version A) =  6.43;  Avg(Version B) =  2.56. This refers to the average number of clicks on the page per user</li>
                         <li>Variance(Version A) = 40.2, Variance (Version B) = 1.72. Variance measures of the spread or dispersion within a set of data, which means that there is a greater range of values in Version A than B, since its variance is greater.
                         </li>
                         <li>
@@ -192,8 +192,95 @@
         <div id="wireframing">
             <div class="content-box">
                 <h2 class="sub-heading">Summary Statistics</h2>
-                <p>Based off my final sketch, I created 3 wireframes for my redesign on Figma. These wireframes were for the Desktop, Tablet and Mobile displays of the webpage which was designed to be responsive.</p>
-                
+                <h3>Average and Variance for each version</h3>
+                <h4>Misclick Rate: </h4>
+                <ul>
+                    <li>Total number of data points per version: 14</li>
+                    <li>
+                        Mean and Median: Not applicable, since this is a boolean with either True or False
+                    </li>
+                    <li> Misclick Rate (Proportion of True) (Version A): 0.57; Rate of misclick (Version B): 0.071  </li>
+                  
+                </ul>
+                <h4>Time on Page (in Milliseconds):</h4>
+                <ul>
+                    <li>
+                        Total number of data points per version: 14
+                    </li>
+                    <li>
+                        Mean (Version A) =  26861.71429;  Mean (Version B) =  9627.214286 
+                    </li>
+                    <li>
+                        Median(Version A) = 26621.5, Median (Version B) = 9404
+                    </li>
+                    <li> Mode: Not applicable for this metric, all values are unique</li>
+                    <li>
+                        Variance(Version A) = 146407008.7, Variance (Version B) = 7429874.951
+                    </li>
+                </ul>
+                <h4>Number of Clicks:</h4>
+                <ul>
+                    <li>
+                        Total number of data points per version: 14
+                    </li>
+                    <li>
+                        Mean(Version A) =  6.43;  Avg(Version B) =  2.56. 
+                    </li>
+                    <li>
+                        Median(Version A) = 4, Median (Version B) = 2
+                    </li>
+                    <li> Mode (Version A) = 2, Mode (Version B) = 2</li>
+                    
+                    <li>
+                        Variance(Version A) = 40.2, Variance (Version B) = 1.72. 
+                    </li>
+                </ul>
+                <h3>What we can learn from the statistics</h3>
+                <h4>Rate of Misclick</h4>
+                <p>From the statistics, we can infer the following:</p>
+                <ul>
+                    <li> Misclick rate: Version A has a higher misclick rate that Version B. However, the sample size is quite small, which makes the estimate less precise. For a more accurate assessment, a larger sample size would be beneficial </li>
+                </ul>
+                <h4>Time on Page:</h4>
+                <p> From the statistics, we can infer the following: </p>
+                <ul>
+                    <li>Mean Time: Users spent significantly more time on Version A (mean of 26,861.7 milliseconds) compared to Version B (mean of 9,627.2 milliseconds). This suggests that Version A might be more engaging or requires more time to navigate.</li>
+                    <li>
+                        Median Time: The median times (26,621.5 milliseconds for A and 9,404 milliseconds for B) are close to the means, indicating a relatively symmetric distribution of time spent on each version.
+                    </li>
+                    <li> Variance in Time: The variance for Version A (146,407,008.7) is much higher than for Version B (7,429,874.951), indicating that there is a wider spread in the time users spend on Version A. This might suggest inconsistent experiences or a diversity in the content's interaction for Version A.</li>
+                </ul>
+                <h4>Number of Clicks:</h4>
+                <p> From the statistics, we can infer the following: </p>
+                <ul>
+                    <li>
+                        Mean Number of Clicks: On average, users clicked more on Version A (mean of 6.43) than on Version B (mean of 2.56). This could imply that Version A is more interactive or possibly more complex to navigate.
+                    </li>
+                    Median Number of Clicks: The median number of clicks is lower than the mean for both versions (4 for A and 2 for B), suggesting a skewed distribution with some users clicking significantly more than others.
+                    <li>
+                        Mode Number of Clicks: The mode for both versions is 2, indicating that the most common number of clicks on both versions is the same.
+                    </li>
+                    <li>
+                        Variance in Clicks: The variance for Version A (40.2) is substantially higher than for Version B (1.72), suggesting greater inconsistency in how users interact with Version A compared to Version B.
+                    </li>
+                </ul>
+              
+                    
+                <h3>Summary</h3>
+                From the statistical results of A/B testing, particularly for the metrics of num of clicks and time spent on webpage. we can conclude that:
+                <ul>
+                    <li>
+                        Version A seems to engage users for a longer duration and prompts more clicks, which is not a desirable effect since we want to optimize for speed and a low misclick rate
+                    </li>
+                    <li>
+                        The higher variance in both time and clicks for Version A suggests that user experiences are more variable. This is a negative outcome for this context, since it may indicate confusion or difficulty in use.
+                    </li>
+                    <li>
+                        Version B shows more consistent user behavior with less time spent and fewer clicks, which is preferable for a streamlined, efficient user experience.
+                    </li>
+                </ul>
+               
+
                 </div>
             </div>
         </div>
@@ -203,6 +290,7 @@
         <div id="redesign">
             <div class="content-box">
                 <h2 class="sub-heading">Conclusion</h2>
+                <p> In conclusion, we can argue that Version B is a better website than Version A, if we are conducting an evaluation based on a shorter time spent on webpage, fewer number of clicks till success, and a lower rate of misclick</p>
 
                 
                 <p>Thank you for stopping by my website and scrolling to the end! :)</p>
