@@ -45,7 +45,11 @@
                 <h2 class="sub-heading">My Hypothesis</h2>
                 
                 <div class="images-content">
-                    <h3>My Data Types: Misclick Rate, Time on Page, and Number of Clicks</h3>
+                    <h3>The Data Collection Process</h3>
+                    <p>We showed the two versions of the interfaces to 14 students each, and measured their UI experience quantitatively by collecting data on: time to page, time to first click, distance of mouse movement, total number of clicks, misclick rate, and success rate. 
+                    </p>
+                    <h3>My Chosen Data Types: Misclick Rate, Time on Page, and Number of Clicks</h3>
+                    <p>After collecting the data, I decided to conduct further statistical analysis on three data types specifically -- Misclick Rate, Time on Page, and Number of Clicks. I chose Number of Clicks because it reveals a lot about the user experience, especially with regard to the ease of task completion. The minimum number of clicks required for successful completion of the task was two. Therefore, by examining the number of clicks by each user, one can better understand user behavior, and possibly quantify the confusion felt by the user when attempting to complete their task. </p>
                     <p>The following table describes each data type, and the null and alternative hypothesis that I came up with for each of them</p>
                     
                     <table>
@@ -61,14 +65,14 @@
                                         <b>Description:</b> The probability that a user clicks something else on the page before finding the correct button for the task
                                     </li>
                                     <li>
-                                        <b>Null Hypothesis:</b> Version A has the probability of misclicks as version B
+                                        <b>Null Hypothesis:</b> Version A has the same misclick rate as version B
                                     </li>
                                     <li>
-                                        <b>Alternative Hypothesis:</b> Version B will have a different misclick rate than version A. </li>
+                                        <b>Alternative Hypothesis:</b> Version A and Version B will have different misclick rates. </li>
                                         <ul>
-                                            <li><b>Justification: </b>This is because Version B is designed with higher color contrast, different colored buttons for different functions, and dividers between appointment slots so there is clear button alignment to appointment details. This makes it easier for users to find the “Schedule Appointment” button for the correct doctor, date and location, lowering the misclick rate.</li>
+                                            <li><b>Justification: </b>Version B will have a different misclick rate from Version A. This is because Version B is designed with usage accuracy in mind. It has a higher color contrast, different colored buttons for different functions, and dividers between appointment slots so that there is clear button alignment to appointment details. This makes it easier for users to accurately locate the “Schedule Appointment” button for the correct doctor, date and location, lowering the misclick rate.</li>
                                         </ul>
-                                    <li><b>My Prediction:</b> I predict that I will reject the null hypothesis, because version A will have a higher misclick rate than Version B. This is due to the design of Version A which has lower color contrast, poor visual alignment and an unclear organization of data, making it easier for users to make mistakes when finding the correct button 
+                                    <li><b>My Prediction:</b> I predict that I will reject the null hypothesis, because version A will have a different misclik rate than Version B. This is due to the design of Version A which has lower color contrast, poor visual alignment and an unclear organization of data, making it easier for users to make mistakes when finding the correct button 
                                     </li>
                                 </ul>
     
@@ -83,10 +87,10 @@
                                         <b>Null Hypothesis:</b> Each user group spends the same amount of time on Version A and Version B
                                     </li>
                                     <li>
-                                        <b>Alternative Hypothesis:</b> Each user group spends a shorter time on version B than on version A.
+                                        <b>Alternative Hypothesis:</b> Each user group spends a shorter amount of time on version B than on version A.
                                     </li>
                                         <ul>
-                                            <li><b>Justification: </b>This is because Version B is designed with higher color contrast, different colored buttons for different functions, and dividers between appointment slots so there is clear button alignment to appointment details. This makes it easier for users to find the “Schedule Appointment” button for the correct doctor, date and location, reducing the time spent finding the correct button.</li>
+                                            <li><b>Justification: </b>This is because Version B is designed with higher color contrast, different colored buttons for different functions, and dividers between appointment slots so there is clear button alignment to appointment details. This makes it easier for users to quickly find the “Schedule Appointment” button for the correct doctor, date and location, reducing the time spent finding the correct button.</li>
                                         </ul>
                                     <li><b>My Prediction:</b> I predict that I will reject the null hypothesis, because users will spend more time on Version A than Version B. This is due to the design of Version A which has lower color contrast, poor visual alignment and an unclear organization of data, causing users to spend more time orienting themselves to the screen’s layout
                                     </li>
@@ -104,9 +108,9 @@
                                         <b>Alternative Hypothesis:</b> The number of times a user clicks on the screen until they successfully complete the task is lower in version B than in version A
                                     </li>
                                         <ul>
-                                            <li><b>Justification: </b>This is because Version B is designed with higher color contrast, different colored buttons for different functions, and dividers between appointment slots so there is clear button alignment to appointment details. This makes it easier for users to find the “Schedule Appointment” button for the correct doctor, date and location, reducing the number of unnecessary clicks made on the screen until the task is completed</li>
+                                            <li><b>Justification: </b>This is because Version B is designed with higher color contrast, different colored buttons for different functions, and dividers between appointment slots so there is clear button alignment to appointment details. This makes it easier for users to find the “Schedule Appointment” button for the correct doctor, date and location, increasing the ease of task completion within two clicks. As such, there will be a reduction the number of unnecessary clicks made on the screen until the task is completed</li>
                                         </ul>
-                                    <li><b>My Prediction:</b> I predict that I will reject the null hypothesis, because user will click on the screen more times in version A than in Version. This is due to the design of Version A which has lower color contrast, poor visual alignment and an unclear organization of data, causing users to be more confused and click on the wrong places at a higher rate.
+                                    <li><b>My Prediction:</b> I predict that I will reject the null hypothesis, because user will click on the screen more times in version A than in Version B. This is due to the design of Version A which has lower color contrast, poor visual alignment and an unclear organization of data, causing users to be more confused and click on the wrong places at a higher rate.
                                     </li>
                                 </ul>
                             </td>
@@ -125,66 +129,59 @@
                 <div class="sketches">
                     <h3>1. Misclick Rate</h3>
                     <h4>Type of Test and Justification</h4>
-                    <p>For this metric, I ran the Chi-Square test, since I am counting the occurrence of a misclick among users of Version A and Version B. The status of whether a misclick occurs is a categorical variable, since its either True or False among a sample of users. 
+                    <p>For this metric, I ran the Chi-Square test, since I am counting the occurrence of a misclick among users of Version A and Version B. The status of whether a misclick occurs is a categorical variable, since its either True or False among a sample of users. As such, the Chi-Square test is most appropriate here.
                     </p>
                     
                     <h4>Was the difference between the Versions statistically significant?</h4>
-                    <p>It was statistically significant, since the p-value = 0.00462, where p-value < significance level (.05). The lower the p-value, the greater the statistical significance of the observed difference. This means that I can reject the null hypothesis, as there is a high chance the alternative hypothesis will repeat itself in other trials or situations.
+                    <p>It was statistically significant, since the <b>p-value = 0.00462, where p-value < significance level (.05)</b>. The lower the p-value, the greater the statistical significance of the observed difference. This means that I can reject the null hypothesis, as there is a high chance the alternative hypothesis will repeat itself in other trials or situations.
                     </p>
 
                     <h4>A description of any other important values and what they tell us</h4>
                     <ul>
-                        <li>Degrees of Freedom (DF) = 1. DF refers to the number of independent pieces of information in a test. since there are only 2 categories of answers, the test has 1 degree of freedom</li>
-                        <li>Chi-Square Value = 8.02. The Chi-Square Value is a single number that adds up all the differences between our actual data and the data expected if there is no difference.  If the actual data and expected data (if no difference) are identical, the Chi-square value is 0.  A bigger difference will give a bigger Chi-square value.In this case, the Chi-Square value is mainly used to calculate the p value</li>
+                        <li><b>Degrees of Freedom (DF) = 1.</b> DF refers to the number of independent pieces of information in a test. since there are only 2 categories of answers, the test has 1 degree of freedom</li>
+                        <li><b>Chi-Square Value = 8.02.</b> The Chi-Square Value is a single number that adds up all the differences between our actual data and the data expected if there is no difference. In this scenario, the Chi-Square value is mainly used to calculate the p value</li>
                     </ul>
 
                     <h4>Conclusion: Is the null hypothesis rejected?</h4>
-                    <p>I reject the null hypothesis.</p>
+                    <p>I reject the null hypothesis, since the p value < significance level.</p>
                     
                     <h3>2. Time on Page</h3>
                     <h4>Type of Test and Justification</h4>
-                    <p>For this metric, I ran the one-tailed t-test, because the time taken is a continuous variable, and I am only interested if the time on page for version A is greater than time on page for version B (single direction)</p>
+                    <p>For this metric, I ran the one-tailed t-test, because the time taken is a continuous variable, and I am only interested if the time on page for version B is lower than time on page for version A (single direction)</p>
                     
                     <h4>Was the difference between the Versions statistically significant?</h4>
-                    <p>It was statistically significant, since the p-value = 0.0000627, where  p-value < significance level (.05). The lower the p-value, the greater the statistical significance of the observed difference. This means that I can reject the null hypothesis, as there is a high chance the alternative hypothesis will repeat itself in other trials or situations.
+                    <p>It was statistically significant, since the <b>p-value = 0.0000627, where p-value < significance level (.05)</b>. 
                     </p>
 
                     <h4>A description of any other important values and what they tell us</h4>
                     <ul>
-                        <li>T-Score = -5.20. The T-Score is the number of standard deviations away from the mean of the t-distribution.</li>
-                        <li>Avg(Version A) =  26861.71429;  Avg(Version B) =  9627.214286. This refers to the mean time taken on page per user</li>
-                        <li>Variance(Version A) = 146407008.7, Variance (Version B) = 7429874.951. Variance measures of the spread or dispersion within a set of data, which means that there is a greater range of values in Version A than B, since its variance is greater.
-                        </li>
-                        <li>
-                            P-Value = 0.0000627. The  p-value is the likelihood of finding a mean difference by chance if indeed there is no difference in the population. The low p value in this context indicates a statistically significant result, meaning the observed data provide strong evidence against the null hypothesis.
-                        </li> 
-                        
+                        <li><b>T-Score = -5.20.</b> The T-Score is the number of standard deviations away from the mean of the t-distribution.</li>
+                        <li><b>Avg(Version A) =  26861.71429,  Avg(Version B) =  9627.214286.</b> This refers to the mean time taken on page per user</li>
+                        <li><b>Variance(Version A) = 146407008.7, Variance (Version B) = 7429874.951.</b> Variance measures of the spread or dispersion within a set of data, which means that there is a greater range of values in Version A than B, since its variance is greater.
+                        </li>                       
                     </ul>
 
                     <h4>Conclusion: Is the null hypothesis rejected?</h4>
-                    <p>I reject the null hypothesis.</p>
+                    <p>I reject the null hypothesis, since the p value < significance level.</p>
 
                     <h3>3. Number of Clicks</h3>
                     <h4>Type of Test and Justification</h4>
                     <p>For this metric, I ran the one-tailed t-test, because the number of clicks on a page till success is a continuous variable, and I am only interested if the number of clicks on page till success for version B is lower than version A (single direction)</p>
                     
                     <h4>Was the difference between the Versions statistically significant?</h4>
-                    <p>It is statistically significant, since p-value = 0.0146, where  p-value < significance level (.05). The lower the p-value, the greater the statistical significance of the observed difference. This means that I can reject the null hypothesis, as there is a high chance the alternative hypothesis will repeat itself in other trials or situations.
+                    <p>It is statistically significant, since <b>p-value = 0.0146, where  p-value < significance level (.05)</b>. 
                     </p>
 
                     <h4>A description of any other important values and what they tell us</h4>
                     <ul>
-                        <li>T-Score = -2.39. The T-Score is the number of standard deviations away from the mean of the t-distribution.</li>
-                        <li>Avg(Version A) =  6.43;  Avg(Version B) =  2.56. This refers to the average number of clicks on the page per user</li>
-                        <li>Variance(Version A) = 40.2, Variance (Version B) = 1.72. Variance measures of the spread or dispersion within a set of data, which means that there is a greater range of values in Version A than B, since its variance is greater.
+                        <li><b>T-Score = -2.39</b></li>
+                        <li><b>Avg(Version A) =  6.43,  Avg(Version B) =  2.56</b>. This refers to the average number of clicks on the page per user</li>
+                        <li><b>Variance(Version A) = 40.2, Variance (Version B) = 1.72</b>. Variance measures of the spread or dispersion within a set of data, which means that there is a greater range of values in Version A than B, since its variance is greater.
                         </li>
-                        <li>
-                            P-Value = 0.0146. The  p-value is the likelihood of finding a mean difference by chance if indeed there is no difference in the population. The low p value in this context indicates a statistically significant result, meaning the observed data provide strong evidence against the null hypothesis.
-                        </li> 
                     </ul>
 
                     <h4>Conclusion: Is the null hypothesis rejected?</h4>
-                    <p>I reject the null hypothesis.</p>
+                    <p>I reject the null hypothesis, since the p value < significance level.</p>
                 </div>
             </div>
 
@@ -195,73 +192,73 @@
                 <h3>Average and Variance for each version</h3>
                 <h4>Misclick Rate: </h4>
                 <ul>
-                    <li>Total number of data points per version: 14</li>
+                    <li><b>Total number of data points per version:</b> 14</li>
                     <li>
-                        Mean and Median: Not applicable, since this is a boolean with either True or False
+                        <b>Mean and Median:</b> Not applicable, since this is a boolean with either True or False
                     </li>
-                    <li> Misclick Rate (Proportion of True) (Version A): 0.57; Rate of misclick (Version B): 0.071  </li>
+                    <li> <b>Misclick Rate (Proportion of True):</b> Version A = 0.5,; Version B = 0.071  </li>
                   
                 </ul>
                 <h4>Time on Page (in Milliseconds):</h4>
                 <ul>
                     <li>
-                        Total number of data points per version: 14
+                        <b>Total number of data points per version:</b> 14
                     </li>
                     <li>
-                        Mean (Version A) =  26861.71429;  Mean (Version B) =  9627.214286 
+                        <b>Mean:</b> Version A =  26861.71429, Version B =  9627.214286 
                     </li>
                     <li>
-                        Median(Version A) = 26621.5, Median (Version B) = 9404
+                        <b>Median:</b> Version A = 26621.5, Version B = 9404
                     </li>
-                    <li> Mode: Not applicable for this metric, all values are unique</li>
+                    <li> <b>Mode:</b> Not applicable for this metric, all values are unique</li>
                     <li>
-                        Variance(Version A) = 146407008.7, Variance (Version B) = 7429874.951
+                        <b>Variance:</b> Version A = 146407008.7, Version B = 7429874.951
                     </li>
                 </ul>
                 <h4>Number of Clicks:</h4>
                 <ul>
                     <li>
-                        Total number of data points per version: 14
+                        <b>Total number of data points per version:</b> 14
                     </li>
                     <li>
-                        Mean(Version A) =  6.43;  Avg(Version B) =  2.56. 
+                        <b>Mean: </b>Version A = 6.43, Version B = 2.56. 
                     </li>
                     <li>
-                        Median(Version A) = 4, Median (Version B) = 2
+                        <b>Median: </b>Version A = 4, Version B = 2
                     </li>
-                    <li> Mode (Version A) = 2, Mode (Version B) = 2</li>
-                    
+                    <li> 
+                        <b>Mode: </b>Version A = 2, Version B = 2</li>
                     <li>
-                        Variance(Version A) = 40.2, Variance (Version B) = 1.72. 
+                        <b>Variance: </b>Version A = 40.2, Version B = 1.72. 
                     </li>
                 </ul>
                 <h3>What we can learn from the statistics</h3>
                 <h4>Rate of Misclick</h4>
                 <p>From the statistics, we can infer the following:</p>
                 <ul>
-                    <li> Misclick rate: Version A has a higher misclick rate that Version B. However, the sample size is quite small, which makes the estimate less precise. For a more accurate assessment, a larger sample size would be beneficial </li>
+                    <li> <b>Misclick rate:</b> Version A has a higher misclick rate that Version B. However, the sample size is quite small, which makes the estimate less precise. For a more accurate assessment, a larger sample size would be beneficial </li>
                 </ul>
                 <h4>Time on Page:</h4>
                 <p> From the statistics, we can infer the following: </p>
                 <ul>
-                    <li>Mean Time: Users spent significantly more time on Version A (mean of 26,861.7 milliseconds) compared to Version B (mean of 9,627.2 milliseconds). This suggests that Version A might be more engaging or requires more time to navigate.</li>
+                    <li><b>Mean Time:</b> Users spent significantly more time on Version A (mean of 26,861.7 ms) compared to Version B (mean of 9,627.2 ms). This suggests that Version A may have required more time to navigate.</li>
                     <li>
-                        Median Time: The median times (26,621.5 milliseconds for A and 9,404 milliseconds for B) are close to the means, indicating a relatively symmetric distribution of time spent on each version.
+                        <b>Median Time:</b> The median times (26,621.5 ms for A and 9,404 ms for B) are close to their respective means, indicating a relatively symmetric distribution of time spent on each version.
                     </li>
-                    <li> Variance in Time: The variance for Version A (146,407,008.7) is much higher than for Version B (7,429,874.951), indicating that there is a wider spread in the time users spend on Version A. This might suggest inconsistent experiences or a diversity in the content's interaction for Version A.</li>
+                    <li> <b>Variance in Time:</b> The variance for Version A (146,407,008.7) is much higher than for Version B (7,429,874.951), indicating that there is a wider spread in the time users spend on Version A. This might suggest inconsistent experiences among the users' interaction with Version A.</li>
                 </ul>
                 <h4>Number of Clicks:</h4>
                 <p> From the statistics, we can infer the following: </p>
                 <ul>
                     <li>
-                        Mean Number of Clicks: On average, users clicked more on Version A (mean of 6.43) than on Version B (mean of 2.56). This could imply that Version A is more interactive or possibly more complex to navigate.
+                        <b>Mean Number of Clicks:</b> On average, users clicked more on Version A (mean of 6.43) than on Version B (mean of 2.56). This could imply that Version A is more complex to navigate.
                     </li>
-                    Median Number of Clicks: The median number of clicks is lower than the mean for both versions (4 for A and 2 for B), suggesting a skewed distribution with some users clicking significantly more than others.
+                        <b>Median Number of Clicks:</b> The median number of clicks is lower than the mean for both versions (4 for A and 2 for B), suggesting a skewed distribution with some users clicking significantly more than others.
                     <li>
-                        Mode Number of Clicks: The mode for both versions is 2, indicating that the most common number of clicks on both versions is the same.
+                        <b>Mode Number of Clicks:</b> The mode for both versions is 2, indicating that the most common number of clicks on both versions is the same.
                     </li>
                     <li>
-                        Variance in Clicks: The variance for Version A (40.2) is substantially higher than for Version B (1.72), suggesting greater inconsistency in how users interact with Version A compared to Version B.
+                        <b>Variance in Clicks:</b> The variance for Version A (40.2) is substantially higher than for Version B (1.72), suggesting greater inconsistency in how users interact with Version A compared to Version B.
                     </li>
                 </ul>
               
@@ -270,7 +267,7 @@
                 From the statistical results of A/B testing, particularly for the metrics of num of clicks and time spent on webpage. we can conclude that:
                 <ul>
                     <li>
-                        Version A seems to engage users for a longer duration and prompts more clicks, which is not a desirable effect since we want to optimize for speed and a low misclick rate
+                        Version engages users for a longer duration and prompts more clicks, which is not a desirable effect since we want to optimize for speed and a low misclick rate
                     </li>
                     <li>
                         The higher variance in both time and clicks for Version A suggests that user experiences are more variable. This is a negative outcome for this context, since it may indicate confusion or difficulty in use.
@@ -290,7 +287,7 @@
         <div id="redesign">
             <div class="content-box">
                 <h2 class="sub-heading">Conclusion</h2>
-                <p> In conclusion, we can argue that Version B is a better website than Version A, if we are conducting an evaluation based on a shorter time spent on webpage, fewer number of clicks till success, and a lower rate of misclick</p>
+                <p> In conclusion, if we are conducting an evaluation based on a shorter time spent on webpage, fewer number of clicks till success, and a lower rate of misclick, we can argue that Version B is a better website than Version A.</p>
 
                 
                 <p>Thank you for stopping by my website and scrolling to the end! :)</p>
